@@ -31,8 +31,10 @@ gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem "ckeditor", '~> 4.1'
-
+gem 'ckeditor', '~> 4.1'
+gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
 # Reduces boot times through caching; required in config/boot.rb
 
 group :development, :test do

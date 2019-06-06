@@ -61,4 +61,6 @@ class PostsController < ApplicationController
   def find_post
     @post = Post.find(params[:id])
   end
+  #This authenticates admin whenever a post is to be created, updated or destroyed.
+ before_action :authenticate_admin!, except: [:index, :show]
 end
